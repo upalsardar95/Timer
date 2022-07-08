@@ -1,0 +1,109 @@
+.container {
+  display: flex;
+  background-color: #f5cece;
+  text-align: "center";
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+
+  h1 {
+      padding: 2px 25px;
+      text-shadow: 2px 2px 2px #6d4545;
+      font-size: 50px;
+      color: #9cc6df;
+  }
+
+  .time {
+    display: flex;
+    font-size: 200px;
+
+    .minute {
+      border: 5px solid #3a3434;
+      border-radius: 10px;
+      color: #f5cece;
+      background-color: #4e4444;
+      //   padding: 0px 5px;
+    }
+    .second {
+      border: 5px solid #3a3434;
+      border-radius: 10px;
+      color: #f5cece;
+      background-color: #4e4444;
+      //   padding: 0px 5px;
+      padding-bottom: 12px;
+    }
+  }
+  .buttons {
+    display: flex;
+    gap: 10px;
+    padding:10px;
+
+    .start {
+      padding: 20px 75px;
+      background-color: #5c50c9;
+      color: aliceblue;
+      font-size: 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      &:hover {
+        background-color: #413392;
+      }
+    }
+    .reset {
+      padding: 20px 75px;
+      background-color: rgb(201, 80, 80);
+      color: aliceblue;
+      font-size: 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      &:hover {
+        background-color: #8f3434;
+      }
+    }
+  }
+  .userInput {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    p {
+      font-size: 16px;
+      color: #f5cece;
+      background-color: #4e4444;
+      padding: 5px;
+      border-radius: 5px;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    }
+
+    .input {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      font-size: 18px;
+      
+      input {
+        background-color: #3a3434;
+        text-align: center;
+        color: #f5cece;
+        padding: 5px;
+        border-radius: 5px;
+      }
+    }
+  }
+  .confirm {
+    padding: 8px 50px;
+    background-color: #69a077;
+    color: aliceblue;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover {
+      background-color: #335a3d;
+    }
+  }
+}
