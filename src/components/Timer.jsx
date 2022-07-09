@@ -73,7 +73,11 @@ const Timer = () => {
       <h1> REACT TIMER </h1>
       <div className="time">
         <span className="minute">{time.minute}</span>
-        <span>:</span>
+        {parseInt(time.counter) % 2 === 0 ? (
+          <span className="middle-w">:</span>
+        ) : (
+          <span className="middle-b">:</span>
+        )}
         <span className="second">{time.second}</span>
       </div>
       <div className="buttons">

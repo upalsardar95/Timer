@@ -9,36 +9,61 @@
   gap: 5px;
 
   h1 {
-      padding: 2px 25px;
-      text-shadow: 2px 2px 2px #6d4545;
-      font-size: 50px;
-      color: #9cc6df;
+    padding: 5px 130px;
+    border-radius: 5px;
+    box-shadow: inset 0 0 50px #2c2b2b;
+    text-shadow: 4px 3px 0 #7a7a7a, 9px 7px 3px #bea9a6;
+    font-size: 40px;
+    color: #8d3636;
   }
 
   .time {
     display: flex;
-    font-size: 200px;
+    align-items: center;
+    justify-content: center;
+    font-size: 195px;
+    // text-shadow: 4px 3px 0 #7a7a7a, 9px 7px 3px #341916;
 
     .minute {
-      border: 5px solid #3a3434;
+      display: flex;
+      border: 5px solid #494848;
       border-radius: 10px;
       color: #f5cece;
-      background-color: #4e4444;
-      //   padding: 0px 5px;
+      background-color: #a19b9b;
+      padding: 0px 10px 12px 10px;
+      box-shadow: inset 0 0 50px #2c2b2b;
+      text-shadow: 4px 3px 0 #7a7a7a, 9px 7px 3px #341916
+    }
+    .middle-w {
+      display: flex;
+      color: #f5cece;
+      font-size: 150px;
+      padding: 0px 2px 50px 2px;
+    }
+    .middle-b {
+      display: flex;
+      color: rgb(27, 14, 14);
+      font-size: 150px;
+      padding: 0px 2px 50px 2px;
+      -webkit-text-stroke: 3px rgb(124, 23, 23)
+      // text-shadow: 1px 1px 2px black, 0 0 10px rgb(238, 82, 10), 0 0 5px rgb(139, 9, 0)
     }
     .second {
-      border: 5px solid #3a3434;
+      display: flex;
+      border: 5px solid #494848;
       border-radius: 10px;
       color: #f5cece;
-      background-color: #4e4444;
-      //   padding: 0px 5px;
-      padding-bottom: 12px;
+      background-color: #a19b9b;
+      padding: 0px 10px 12px 10px;
+      // padding-bottom: 12px;
+      box-shadow: inset 0 0 50px #2c2b2b;
+      text-shadow: 4px 3px 0 #7a7a7a, 9px 7px 3px #341916
     }
   }
   .buttons {
     display: flex;
     gap: 10px;
-    padding:10px;
+    padding: 10px;
 
     .start {
       padding: 20px 75px;
@@ -46,6 +71,7 @@
       color: aliceblue;
       font-size: 20px;
       border-radius: 5px;
+      box-shadow: inset 0 0 50px #110a3a;
       cursor: pointer;
       &:hover {
         background-color: #413392;
@@ -57,9 +83,11 @@
       color: aliceblue;
       font-size: 20px;
       border-radius: 5px;
+      box-shadow: inset 0 0 50px #2c2b2b;
       cursor: pointer;
       &:hover {
-        background-color: #8f3434;
+        background-color: #6e1919;
+        // box-shadow: inset 0 0 50px #e44c4c
       }
     }
   }
@@ -85,7 +113,7 @@
       align-items: center;
       gap: 10px;
       font-size: 18px;
-      
+
       input {
         background-color: #3a3434;
         text-align: center;
