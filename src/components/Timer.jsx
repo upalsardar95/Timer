@@ -25,6 +25,9 @@ const Timer = () => {
       time.minute = min || "00";
       time.counter = Math.floor(parseInt(min) * 60 + parseInt(sec));
     }
+    document.getElementById("minutes").value = "";
+    document.getElementById("seconds").value = "";
+
   };
 
   useEffect(() => {
